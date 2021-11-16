@@ -9,9 +9,13 @@ The same Contrastive RNN implementation is used in:
 - C. Jacobs and H. Kamper, "Multilingual transfer of acoustic word embeddings improves when training on languages related to the target zero-resource language," in *Proc. Interspeech*, 2021. [[arXiv](https://arxiv.org/abs/2106.12834)]
 
 ## Data
+The <em>data</em> directory contains the data to apply the AWE models. Each .npz file contains the extracted MFCCs of isolaed word segments.
+The features are extracted as in ... described in ...
+Currently only contains the extracted features from he English development set. 
 
 ## Multilingual AWE models
-
+The <em>models</em> directory contains multilingual AWE models. The directory indicates the languages the model is trained on.
+Only contains models trained using the ContrastiveRNN in ... and ...
 
 ## Install dependencies
 
@@ -30,5 +34,5 @@ To install `speech_dtw` (required for same-different evaluation) and `shorten`
 
 You can install all the other dependencies in a conda environment by running:
 
-    conda env create -f environment.yml
-    conda activate pyt1.4
+    conda env create -f env.yml
+    conda activate awe
