@@ -28,3 +28,9 @@ You can install all the other dependencies in a conda environment by running:
 
     conda env create -f env.yml
     conda activate awe
+
+## Apply AWE model
+
+Apply a multilingual model to extracted speech features
+
+    python apply_model_to_npz models/contrastive/xho+nso+ssw+tsn+nbl+eng.gt/18cdc6b389/final_model.pt data/eng.dev.gt_words.npz --output_npz_fn             "outputs/eng_val_embed.npz"
