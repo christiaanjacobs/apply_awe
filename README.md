@@ -23,14 +23,6 @@ You will require the following:
 
 - [Python 3](https://www.python.org/downloads/)
 - [PyTorch 1.4](https://pytorch.org/)
-- [LibROSA](http://librosa.github.io/librosa/)
-- [Cython](https://cython.org/)
-- [tqdm](https://tqdm.github.io/)
-- [speech_dtw](https://github.com/kamperh/speech_dtw/)
-- [shorten](http://etree.org/shnutils/shorten/dist/src/shorten-3.6.1.tar.gz)
-
-To install `speech_dtw` (required for same-different evaluation) and `shorten`
-(required for processing audio), run `./install_local.sh`.
 
 You can install all the other dependencies in a conda environment by running:
 
