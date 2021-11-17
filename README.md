@@ -2,23 +2,23 @@
 
 ## Overview
 
-PyTorch implementation of multilingual acoustic word embedding approaches. The experiments are described in:
+Applying AWE models to extracted speech features. Experiments describing how AWE are trained are described in:
 - C. Jacobs, H. Kamper, and Y. Matusevych, "Acoustic word embeddings for zero-resource languages using self-supervised contrastive learning and multilingual adaptation," in *Proc. SLT*, 2021. [[arXiv](https://arxiv.org/abs/2103.10731)]
 
-The same Contrastive RNN implementation is used in:
+and 
+
 - C. Jacobs and H. Kamper, "Multilingual transfer of acoustic word embeddings improves when training on languages related to the target zero-resource language," in *Proc. Interspeech*, 2021. [[arXiv](https://arxiv.org/abs/2106.12834)]
 
 ## Data
 The ```data``` directory contains speech features extracted from word segments, for example, MFCCs. The features must be stored in <em>filename.npz</em> file format. The file must store a list of sequences with size ```L x &#8902; x D``` where L is the number of word segments, &#8902; is the arbitrary length of a word segment and D is the dimensionality of a single speech feature.
 
-The <em>data</em> directory contains the data to apply the AWE models. Each .npz file contains the extracted MFCCs of isolaed word segments.
-The features are extracted as in ... described in ...
-Currently only contains the extracted features from he English development set. 
-
+Currently the data directory contains MFCCs from word segments in the English validation set in the NCHLT dataset. The features are extracted using code in ..., better documented in ...
 
 ## Multilingual AWE models
-The <em>models</em> directory contains multilingual AWE models. The directory indicates the languages the model is trained on.
-Only contains models trained using the ContrastiveRNN in ... and ...
+The ```models``` directory contains multilingual AWE models. The directory indicates the languages the model is trained on.
+
+
+Currently the directory contains two models trained using the ContrastiveRNN. 
 
 ## Install dependencies
 
