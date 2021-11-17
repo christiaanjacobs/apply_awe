@@ -39,3 +39,5 @@ Apply a multilingual model to extracted speech features
    
    
 ## Visualise AWEs
+![alt text](https://github.com/christiaanjacobs/apply_awe/blob/master/tsne.pdf?raw=true)
+
