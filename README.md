@@ -9,7 +9,8 @@ The same Contrastive RNN implementation is used in:
 - C. Jacobs and H. Kamper, "Multilingual transfer of acoustic word embeddings improves when training on languages related to the target zero-resource language," in *Proc. Interspeech*, 2021. [[arXiv](https://arxiv.org/abs/2106.12834)]
 
 ## Data
-The <em>data</em> directory contains speech features extracted from word segments, for example MFCCs. The features must be in n the format <em>filename.npz</em> storing a list of sequences with size ```` ``` L x &#8902; ``` ```` numpy array of (* is any number of trailing dimensions)
+The ```data``` directory contains speech features extracted from word segments, for example, MFCCs. The features must be stored in <em>filename.npz</em> file format. The file must store a list of sequences with size ```L x &#8902; x D``` where L is the number of word segments, &#8902; is the arbitrary length of a word segment and D is the dimensionality of a single speech feature.
+
 The <em>data</em> directory contains the data to apply the AWE models. Each .npz file contains the extracted MFCCs of isolaed word segments.
 The features are extracted as in ... described in ...
 Currently only contains the extracted features from he English development set. 
