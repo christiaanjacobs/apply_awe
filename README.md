@@ -2,7 +2,7 @@
 
 ## Overview
 
-Applying AWE models to extracted speech features. Experiments describing how AWE are trained are described in:
+Applying AWE models to extracted speech features. The experiemnts for producing the AWE models are described in:
 - C. Jacobs, H. Kamper, and Y. Matusevych, "Acoustic word embeddings for zero-resource languages using self-supervised contrastive learning and multilingual adaptation," in *Proc. SLT*, 2021. [[arXiv](https://arxiv.org/abs/2103.10731)]
 
 - C. Jacobs and H. Kamper, "Multilingual transfer of acoustic word embeddings improves when training on languages related to the target zero-resource language," in *Proc. Interspeech*, 2021. [[arXiv](https://arxiv.org/abs/2106.12834)]
@@ -10,7 +10,7 @@ Applying AWE models to extracted speech features. Experiments describing how AWE
 ## Data
 The ```data``` directory contains speech features extracted from word segments, for example, MFCCs. The features must be stored in <em>filename.npz</em> file format. The file must store a list of sequences with size ```L x &#8902; x D``` where L is the number of word segments, &#8902; is the arbitrary length of a word segment and D is the dimensionality of a single speech feature.
 
-Currently the data directory contains MFCCs from word segments in the English validation set in the NCHLT dataset. The features are extracted using code in ..., better documented in ...
+Currently the data directory contains MFCCs from word segments in the English validation set from the NCHLT dataset. The code used to extract the features are given [here](https://github.com/christiaanjacobs/nchlt_awe/tree/master/features). The same feature extraction is applied [here](https://github.com/christiaanjacobs/globalphone_awe_pytorch) (currently this repo is better documented).
 
 ## Multilingual AWE models
 The ```models``` directory contains multilingual AWE models. The directory indicates the languages the model is trained on.
