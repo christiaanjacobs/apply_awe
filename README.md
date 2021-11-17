@@ -12,8 +12,8 @@ The ```data``` directory contains speech features extracted from word segments, 
 Currently the data directory contains MFCCs from word segments in the English validation set from the NCHLT dataset. The code used to extract the features are given [here](https://github.com/christiaanjacobs/nchlt_awe/tree/master/features). The same feature extraction is applied [here](https://github.com/christiaanjacobs/globalphone_awe_pytorch) (currently this repo is better documented).
 
 ## Multilingual AWE models
-The ```models``` directory contains multilingual AWE models. The directory indicates the languages the model is trained on. For example, the model with directory name ```models/contrastive/xho+nso+ssw+tsn+nbl+afr.gt/...``` is trained with equel number of training examples for each language seperated by ```+```. The iso code for the languages are as given in Table 1 in:
-- E. Barnard, M. Davel, C. van Heerden, F. Wet, and J. Badenhorst, “The NCHLT speech corpus of the South African languages,” in *Proc. SLTU*, 2014 [https://www.researchgate.net/publication/301858320_The_nchlt_speech_corpus_of_the_south_african_languages]
+The ```models``` directory contains multilingual AWE models. The directory indicates the languages the model is trained on. For example, the model with directory name ```models/contrastive/xho+nso+ssw+tsn+nbl+afr.gt/...``` is trained with equel number of training examples from each language seperated by ```+```. The corresponding language for each ISO language code (given here) are given in Table 1 in:
+- E. Barnard, M. Davel, C. van Heerden, F. Wet, and J. Badenhorst, “The NCHLT speech corpus of the South African languages,” in *Proc. SLTU*, 2014 [[link]https://www.researchgate.net/publication/301858320_The_nchlt_speech_corpus_of_the_south_african_languages]
 
 
 Currently the directory contains two models trained using the ContrastiveRNN. 
