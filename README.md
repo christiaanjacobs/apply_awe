@@ -1,8 +1,7 @@
 # Applying multilingual AWE models
 
 ## Overview
-
-Applying AWE models to extracted speech features. The experiemnts for producing the AWE models are described in:
+The provided code is for applying a multilingual AWE model to a set of speech features, specifically MFCCs, extracted from isolated word segments. The experiemnts for producing the AWE models are described in:
 - C. Jacobs, H. Kamper, and Y. Matusevych, "Acoustic word embeddings for zero-resource languages using self-supervised contrastive learning and multilingual adaptation," in *Proc. SLT*, 2021. [[arXiv](https://arxiv.org/abs/2103.10731)]
 
 - C. Jacobs and H. Kamper, "Multilingual transfer of acoustic word embeddings improves when training on languages related to the target zero-resource language," in *Proc. Interspeech*, 2021. [[arXiv](https://arxiv.org/abs/2106.12834)]
@@ -13,7 +12,8 @@ The ```data``` directory contains speech features extracted from word segments, 
 Currently the data directory contains MFCCs from word segments in the English validation set from the NCHLT dataset. The code used to extract the features are given [here](https://github.com/christiaanjacobs/nchlt_awe/tree/master/features). The same feature extraction is applied [here](https://github.com/christiaanjacobs/globalphone_awe_pytorch) (currently this repo is better documented).
 
 ## Multilingual AWE models
-The ```models``` directory contains multilingual AWE models. The directory indicates the languages the model is trained on.
+The ```models``` directory contains multilingual AWE models. The directory indicates the languages the model is trained on. For example, the model with directory name ```models/contrastive/xho+nso+ssw+tsn+nbl+afr.gt/...``` is trained with equel number of training examples for each language seperated by ```+```. The iso code for the languages are as given in Table 1 in:
+- E. Barnard, M. Davel, C. van Heerden, F. Wet, and J. Badenhorst, “The NCHLT speech corpus of the South African languages,” in *Proc. SLTU*, 2014 [https://www.researchgate.net/publication/301858320_The_nchlt_speech_corpus_of_the_south_african_languages]
 
 
 Currently the directory contains two models trained using the ContrastiveRNN. 
