@@ -7,7 +7,7 @@ The provided code is for applying a multilingual AWE model to a set of speech fe
 - C. Jacobs and H. Kamper, "Multilingual transfer of acoustic word embeddings improves when training on languages related to the target zero-resource language," in *Proc. Interspeech*, 2021. [[arXiv](https://arxiv.org/abs/2106.12834)]
 
 ## Data
-The ```data``` directory contains speech features extracted from word segments, for example, MFCCs. The features must be stored in <em>filename.npz</em> file format. The file must store a list of sequences with size ```L x * x D``` where ```L``` is the number of word segments, ```*``` is the arbitrary length of a word segment and ```D``` is the dimensionality of a single speech feature.
+The ```data``` directory contains speech features extracted from word segments, for example, MFCCs. The features are stored in an numpy archive ```filename.npz```. The file stores a list of sequences with size ```L x * x D``` where ```L``` is the number of word segments, ```*``` is the arbitrary length of a word segment and ```D``` is the dimensionality of a single speech feature.
 
 Currently the data directory contains MFCCs from word segments in the English validation set from the NCHLT dataset. The code used to extract the features are given [here](https://github.com/christiaanjacobs/nchlt_awe/tree/master/features). The same feature extraction is applied [here](https://github.com/christiaanjacobs/globalphone_awe_pytorch) (currently this repo is better documented).
 
