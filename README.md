@@ -37,11 +37,12 @@ Apply a multilingual ContrastiveRNN model to English validation data:
     ./apply_model_to_npz.py models/contrastive/xho+nso+ssw+tsn+nbl+eng.gt/18cdc6b389/final_model.pt \
         data/eng.dev.gt_words.npz \
         --output_npz_fn "outputs/eng_val_embed.npz"
-   
+  
+ The output is a numpy archive storing an array of AWEs of size ```L x M```, where ```L``` is the number of embeddigns and ```M``` is the dimensionality of the AWEs.
    
 ## Visualise AWEs
 
 The ```visualise_embeddings.ipynb``` notebook can be used to visualise the embeddings. 
-For example, the figure below shows the t-SNE visualisation of a selection of AWEs obtained by applying the multilingual ContrastiveRNN model to the English validation data.
+For example, the figure below shows the t-SNE visualisation of a selection of AWEs obtained by applying the multilingual ContrastiveRNN model to the English validation data. The figure shows that the AWEs of words from the same word type are more similar than the embeddings from different word types.
 ![tsne plot](https://github.com/christiaanjacobs/apply_awe/blob/master/outputs/tsne.png?raw=true)
 
