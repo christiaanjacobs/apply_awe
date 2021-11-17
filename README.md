@@ -32,7 +32,7 @@ You can install all the other dependencies in a conda environment by running:
 
 ## Apply AWE model
 
-Apply a multilingual model to extracted speech features
+Apply a multilingual ContrastiveRNN model to English validation data:
 
     ./apply_model_to_npz.py models/contrastive/xho+nso+ssw+tsn+nbl+eng.gt/18cdc6b389/final_model.pt \
         data/eng.dev.gt_words.npz \
@@ -41,9 +41,7 @@ Apply a multilingual model to extracted speech features
    
 ## Visualise AWEs
 
-The <em>visualise_embeddings.ipynb</em> notebook can be used to visualise the embeddings. 
-For example, the figure below shows the t-SNE visualisation of AWEs obtained by applying the multilingual ContrastiveRNN model to the English validation data.
-The multilingual ContrastiveRNN AWE model is trained on: isiXhosa, Sepedi, siSwati, Setswana, isiNdebele, English.  
-
+The ```visualise_embeddings.ipynb``` notebook can be used to visualise the embeddings. 
+For example, the figure below shows the t-SNE visualisation of a selection of AWEs obtained by applying the multilingual ContrastiveRNN model to the English validation data.
 ![tsne plot](https://github.com/christiaanjacobs/apply_awe/blob/master/outputs/tsne.png?raw=true)
 
