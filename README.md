@@ -41,7 +41,7 @@ Apply a multilingual model to extracted speech features
 ## Visualise AWEs
 
 The <em>visualise_embeddings.ipynb</em> notebook can be used to visualise the embeddings. 
-For example, the t-SNE visualisation of AWEs obtained by applying the multilingual ContrastiveRNN model to the English validation data.
+For example, the figure below shows the t-SNE visualisation of AWEs obtained by applying the multilingual ContrastiveRNN model to the English validation data.
 The multilingual ContrastiveRNN AWE model is trained on: isiXhosa, Sepedi, siSwati, Setswana, isiNdebele, English.  
 
 ![tsne plot](https://github.com/christiaanjacobs/apply_awe/blob/master/outputs/tsne.png?raw=true)
