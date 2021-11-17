@@ -1,4 +1,4 @@
-# Applying multilingual AWE models to NCHLT data
+# Applying multilingual AWE models
 
 ## Overview
 
